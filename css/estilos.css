@@ -18,12 +18,34 @@ img{
   background-color: #5b7989;
   border-radius: 10px 10px 0 0;
   height: 100px;
+  padding-left: 5%;
+  padding-right: 5%;
+  animation: miAnimacion 1s;
+}
+@-webkit-keyframes miAnimacion {
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
 }
 #footer{
   float: left;
   width: 100%;
   background-color: #C6d5c5;
   border-radius: 0 0 10px 10px;
+}
+#footer img{
+
+  width: 20px;
+  margin: 0;
+}
+#footer p{
+
 }
 h1{
   color: white;
@@ -37,10 +59,12 @@ h1{
 }
 nav{
   float: right;
+  width: 30%;
 }
 nav a{
   text-decoration: none;
   display: inline-block;
+  width: 30%;
 }
 article
 {
@@ -120,10 +144,11 @@ article
   nav{
     float: none;
     text-align: center;
+    width: auto;
   }
   nav a{
     text-decoration: none;
     display: inline-block;
+    width: auto;
   }
-
 }
