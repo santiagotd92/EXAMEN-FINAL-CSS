@@ -44,8 +44,14 @@ img{
   width: 20px;
   margin: 0;
 }
-#footer p{
-
+.foto{
+  width: 33.3%;
+}
+.galeria{
+  background-color: #d5c75f;
+  width: 100%;
+  box-sizing: border-box;
+	float:left;
 }
 h1{
   color: white;
@@ -73,7 +79,15 @@ article
 	height: 100%;
 	padding: 2%;
 	text-align: center;
-
+}
+article.foto:nth-child(even){
+  -webkit-filter: grayscale(100%);
+}
+article.foto:nth-child(1){
+  -webkit-filter: blur(10px);
+}
+article.foto:nth-child(3){
+  -webkit-filter: sepia(90%);
 }
 #columna1{
   background-color: #82c3a6;
@@ -115,6 +129,8 @@ article
   border-width: 2px;
 }
 
+
+
 @media screen and (max-width: 900px){
 
   #contenido{
@@ -133,10 +149,12 @@ article
   .col-footer{
     width: 100%;
   }
-
   .titulo{
     text-align: center;
     float:none;
+  }
+  .foto{
+    width: 100%;
   }
   #cabecera{
     height: auto;
